@@ -1,0 +1,135 @@
+/*CLASS
+
+<!--Container-->
+.container <-- Main
+.img
+.name
+.description
+----->
+
+<!--Data-->
+.data <-- Main
+.eth_icon
+.eth_text
+.lock_icon
+.lock_text
+------->
+
+<!--User-->
+.user <-- Main
+.user_img
+.user_text
+--------->
+
+*/
+
+
+:root {
+    --font: 'Outfit', sans-serif;
+    --blu: hsl(178, 100%, 50%)
+}
+
+html {
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    border-radius: 1.3rem;
+    max-width: 19rem;
+    max-height: 33rem;
+    margin-top: 8rem;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 0.6rem;
+}
+
+.name {
+    color: white;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.description {
+    color: hsl(215, 20%, 50%);
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_img {
+    border-color: rgb(180, 176, 176);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    width: 9%;
+    height: 9%;
+    margin-right: 0.8rem;
+    margin-left: 0.2rem;
+}
+
+.user_text {
+    color: hsl(215, 20%, 50%);
+    font-size: 0.9rem;
+}
+
+.user_text span {
+    color: white;
+}
+
+hr {
+    border-color: hsl(215, 32%, 40%);
+    margin-top: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.eth_text {
+    color: var(--blu);
+    margin-left: 0.1rem;
+}
+
+.clock_text {
+    margin-left: 0.1rem;
+    color: hsl(215, 20%, 50%);
+}
+
+.eth_icon {
+    height: 1.1rem;
+}
+
+.clock_icon {
+    height: 1.1rem;
+}
+
+footer {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--blu);
+}
